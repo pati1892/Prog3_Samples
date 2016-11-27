@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="items is collection of IDrawingItem&#xD;&#xA;&#xD;&#xA;Kompositum">
+    <Position X="0.625" Y="3.667" Height="0.75" Width="1.846" />
+  </Comment>
+  <Comment CommentText="IDrawingItem&#xD;&#xA;Komponente">
+    <Position X="4.865" Y="0.604" Height="0.604" Width="1.117" />
+  </Comment>
+  <Comment CommentText="Blätter">
+    <Position X="8.25" Y="2.948" Height="0.448" Width="0.7" />
+  </Comment>
+  <Class Name="IDrawingItem" Collapsed="true">
+    <Position X="3" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAIAAAEAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IDrawingItem.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EllipseDrawing" Collapsed="true">
+    <Position X="3" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAgAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>EllipseDrawing.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LineDrawing" Collapsed="true">
+    <Position X="4.75" Y="2.75" Width="1.5" />
+    <InheritanceLine Type="IDrawingItem" ManuallyRouted="true">
+      <Path>
+        <Point X="3.75" Y="1.312" />
+        <Point X="3.75" Y="1.572" />
+        <Point X="5.5" Y="1.572" />
+        <Point X="5.5" Y="2.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAgAgAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LineDrawing.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RectangleDrawing" Collapsed="true">
+    <Position X="6.5" Y="2.75" Width="1.5" />
+    <InheritanceLine Type="IDrawingItem" ManuallyRouted="true">
+      <Path>
+        <Point X="3.75" Y="1.312" />
+        <Point X="3.75" Y="1.562" />
+        <Point X="7.25" Y="1.562" />
+        <Point X="7.25" Y="2.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAEAAAAAAgAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RectangleDrawing.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Drawing">
+    <Position X="0.75" Y="2" Width="1.5" />
+    <Members>
+      <Method Name="~Drawing" Hidden="true" />
+      <Method Name="AddItem" Hidden="true" />
+      <Method Name="Drawing" Hidden="true" />
+      <Method Name="DrawItem" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEgAAAAAgAAAAAAAAAAAAIACAAA=</HashCode>
+      <FileName>Drawing.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
